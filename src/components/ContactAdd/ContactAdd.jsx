@@ -61,8 +61,6 @@ handleSubmit = (evt) => {
 //     setNumber('');
 //   };
 render() {
-
-
   return (
     <div className={css.primary}>
       <form onSubmit={this.handleSubmit} className={css.form}>

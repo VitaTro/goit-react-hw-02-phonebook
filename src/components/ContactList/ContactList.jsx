@@ -20,9 +20,8 @@ import css from "./ContactList.module.css";
 //     );
 // };
 
-const ContactList = (props) => {
-  const { contacts, filter, deleteFunction } = props;
-  return(
+const ContactList =   ({ contacts, filter, deleteFunction }) => {
+   return(
   <div className={css.primary}>
     <ul className={css.list}>
         {contacts
@@ -48,6 +47,8 @@ const ContactList = (props) => {
   </div>
   );
 };
+ 
+
 
 ContactList.propTypes = {
   contact: PropTypes.array.isRequired,
